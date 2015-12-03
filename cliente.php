@@ -6,7 +6,7 @@ $fecha = $_GET['fecha'];
 $componente = $_GET['componente'];
 $servicio = $_GET['componente'];
 
-$ruta = 'http://'.$_SERVER['SERVER_NAME'];
+$ruta = 'https://'.$_SERVER['SERVER_NAME'];
 
 $cliente = new nusoap_client($ruta."/".$servicio.".php",false);
 
