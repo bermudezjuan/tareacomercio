@@ -8,7 +8,7 @@ $servicio = $_GET['componente'];
 
 $ruta = 'http://'.$_SERVER['SERVER_NAME'];
 
-$cliente = new nusoap_client($ruta."/ws/".$servicio.".php",false);
+$cliente = new nusoap_client($ruta."/".$servicio.".php",false);
 
 function randomAlpha() {
    srand(time());

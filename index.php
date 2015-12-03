@@ -9,7 +9,7 @@
             var fecha = $("#month").val();
             $.ajax({
                 type: 'GET',
-                url: location.origin + '/ws/cliente.php',
+                url: location.origin + '/cliente.php',
                 data: {fecha: fecha, componente: componente, servicio: componente},
                 success: function(data) {
                     json_data = JSON.parse(data)
